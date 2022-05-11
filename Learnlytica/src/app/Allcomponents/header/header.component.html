@@ -1,0 +1,38 @@
+<p>header works and has navigation bar in it!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" >Learnlytica</a>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/list-course">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/table">TableEx</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['./templateform']">TemplateForm</a>
+                </li>
+                
+                <li class="nav-item">
+                    <button mat-button [routerLink]="['./reactive']">Reactive</button>
+                </li>
+                <li class="nav-item">
+                    <button mat-button (click)="openDialog()">Login</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
