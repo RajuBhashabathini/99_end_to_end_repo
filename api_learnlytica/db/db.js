@@ -1,7 +1,6 @@
 
 var mysql = require('mysql');
 
-
 // let myconnect = function () {
 //   var connection = mysql.createConnection({
 //     host: 'localhost',
@@ -11,14 +10,10 @@ var mysql = require('mysql');
 //     insecureAuth: true
 //   });
 //   return connection;
-
 // };
 
-
 require('dotenv').config();
-
 // console.log(process.env)
-
 let mysqlConnect = function () {
     return mysql.createConnection({
        
